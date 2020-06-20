@@ -1,0 +1,4 @@
+[2020-06-20T22:16:21.239672+08:00] name.WARNING: Foo [] []
+[2020-06-20T22:16:21.241877+08:00] name.ERROR: Bar [] []
+[2020-06-20T22:19:11.021425+08:00] testnae.WARNING: this is a warning [] []
+[2020-06-20T22:19:11.023310+08:00] testnae.ERROR: this is a error [] []
