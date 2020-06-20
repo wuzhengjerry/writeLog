@@ -23,7 +23,7 @@ class Log {
 	 *
 	 * @var int
 	 */
-	protected $_threshold = 1;
+	protected $_threshold = 4;
 
 	/**
 	 * Array of threshold levels to log
@@ -74,10 +74,11 @@ class Log {
 	 *
 	 * @return	void
 	 */
-	public function __construct($file_path)
+	public function __construct($file_path, $threshold=4)
 	{
 		$this->_log_path = $file_path;
 		$this->_file_ext = 'log';
+		$this->_threshold = $threshold;
 
 		file_exists($this->_log_path) OR mkdir($this->_log_path, 0755, TRUE);
 

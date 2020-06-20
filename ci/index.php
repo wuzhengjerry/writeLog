@@ -8,4 +8,4 @@
 
 include 'newLog.php';
 
-$log->write_log('ERROR', 'this is a error message');
+$log->write_log('INFO', 'this is a error message');

@@ -1,6 +1,0 @@
-
-
-ERROR - 2020-06-20 23:00:45 --> #0  c() called at [D:\phpstudy_pro\WWW\writelog\ci\debug_print_backtrace.php:16]
-#1  b() called at [D:\phpstudy_pro\WWW\writelog\ci\debug_print_backtrace.php:12]
-#2  a() called at [D:\phpstudy_pro\WWW\writelog\ci\debug_print_backtrace.php:29]
-

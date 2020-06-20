@@ -16,6 +16,9 @@ function b() {
     c();
 }
 
+function formate_line($back_trace) {}
+
+
 function c(){
     global $log;
     ob_start();
@@ -24,6 +27,12 @@ function c(){
     ob_end_clean();
 //    $trace = strtr($trace, '#', PHP_EOL);
 //    var_dump($trace);
-    $log->write_log('ERROR',$trace);
+
+    $log->write_log('DEBUG',$trace);
+
+    $back_trace = debug_backtrace();
+    $result = formate_line ($back_trace);
+    $log->write_log('DEBUG',$result);
+    var_dump($back_trace);
 }
 a();
